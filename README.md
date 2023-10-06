@@ -1,12 +1,8 @@
-# cypress test tasks
-
-
-
 ## Getting started
 
-clone repo: git clone https://gitlab.com/Zadubinnyi/cypress-allure.git
+clone repo: git clone https://github.com/Baelir100/Cypress_Allure
 
 install cypress: npm install cypress
 
-run tests: npx cypress run --browser chrome
+run tests: npx cypress run --browser chrome --env allure=true
 # Cypress_Allure
