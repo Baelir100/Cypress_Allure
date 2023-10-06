@@ -1,0 +1,13 @@
+stages: 
+  - testing 
+ 
+docker_job: 
+  stage: testing 
+  tags: 
+    - docker 
+  image: cypress/browsers:latest 
+  before_script: 
+    - npm ci  
+  script: 
+    - npx cypress run --record --key db517a59-1639-42e9-b9b5-4ff48645788d --browser chrome 
+  allow_failure: true 
